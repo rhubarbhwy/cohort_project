@@ -26,9 +26,8 @@ df['source']='instagram'
 df['brand']='bublywater'
 
 #import another json file
-df2=pd.read_json('drinkspindrift-2023-03-01-2023-09-01-101.json')
-d2 = pd.read_json('drinkspindrift-2023-03-01-2023-09-01-101.json')
-data2 = d['data']
+d2=pd.read_json('drinkspindrift-2023-03-01-2023-09-01-101.json')
+data2 = d2['data']
 data2
 
 n=0 
