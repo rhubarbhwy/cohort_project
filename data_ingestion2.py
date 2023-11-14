@@ -48,6 +48,7 @@ for brand in competetors_lst:
     # Run the Actor and wait for it to finish
     run = client.actor("clockworks/free-tiktok-scraper").call(run_input=run_input)
     data_variable = client.dataset(run["defaultDatasetId"]).list_items().items
+    #Add filter
     filtered_data = [item for item in data_variable if from_date <= item.get("createTimeISO") <= to_date]
     payload = {
         "data": filtered_data
